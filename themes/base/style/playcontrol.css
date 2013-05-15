@@ -1,0 +1,317 @@
+#BottomToolbar {
+    background-image: "landscape-playerbar-bg";
+
+    minimum-size: 100% 15%;
+    preferred-size: 100% 15%;
+    maximum-size: 100% 15%;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    text-margin-left: 0;
+    text-margin-top: 0;
+    text-margin-right: 0;
+    text-margin-bottom: 0;
+}
+
+#BottomToolbarButtonCenter {
+    background-image: meegotouch-button-navigationbar-media-portrait-toolbarbutton-background-horizontal-center;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size:  6% 60px;
+    preferred-size: 6% 60px;
+    maximum-size: 6% 60px;
+    icon-size: $SIZE_ICON_DEFAULT $SIZE_ICON_DEFAULT;
+}
+
+#BottomToolbarButtonShuffle{
+    background-image: meegotouch-button-navigationbar-media-portrait-toolbarbutton-background-horizontal-center;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size:  6% 60px;
+    preferred-size: 6% 60px;
+    maximum-size: 6% 60px;
+    icon-size: $SIZE_ICON_DEFAULT $SIZE_ICON_DEFAULT;
+}
+
+#BottomToolbarButtonShuffle:pressed {
+    background-image : meegotouch-button-navigationbar-media-portrait-toolbarbutton-background-pressed-horizontal-center;
+}
+
+#BottomToolbarButtonCenter:pressed {
+    background-image: meegotouch-button-navigationbar-media-portrait-toolbarbutton-background-pressed-horizontal-center;
+}
+
+#BottomToolbarButtonRepeat {
+    background-image: meegotouch-button-navigationbar-media-portrait-toolbarbutton-background-horizontal-right;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size:  6% 60px;
+    preferred-size: 6% 60px;
+    maximum-size: 6% 60px;
+    icon-size: $SIZE_ICON_DEFAULT $SIZE_ICON_DEFAULT;
+}
+
+#BottomToolbarButtonRepeat:pressed {
+    background-image: meegotouch-button-navigationbar-media-portrait-toolbarbutton-background-pressed-horizontal-right;
+}
+
+#BottomToolbarButtonLeft {
+    background-image: meegotouch-button-navigationbar-media-portrait-toolbarbutton-background-horizontal-left;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size:  6% 60px;
+    preferred-size: 6% 60px;
+    maximum-size: 6% 60px;
+    icon-size: $SIZE_ICON_DEFAULT $SIZE_ICON_DEFAULT;
+}
+
+#BottomToolbarButtonLeft:pressed {
+    background-image: meegotouch-button-navigationbar-media-portrait-toolbarbutton-background-pressed-horizontal-left;
+}
+
+#PlaybarPanel1 {
+    background-tiles: meegotouch-button-navigationbar-media-portrait-toolbarbutton-background-horizontal-center $CORNER_MARGINS;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size: 51% 60;
+    preferred-size: 51% 60;
+    maximum-size: 51% 60;
+}
+
+#PlaybarPanel2 {
+    background-tiles: meegotouch-button-navigationbar-media-portrait-toolbarbutton-background-horizontal-center $CORNER_MARGINS;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size: 20% 60;
+    preferred-size: 20% 60;
+    maximum-size: 20% 60;
+}
+
+#PlaybarPanel2:pressed {
+    background-tiles: meegotouch-button-navigationbar-media-portrait-toolbarbutton-background-pressed-horizontal-center $CORNER_MARGINS;
+}
+
+#TimeButton {
+    background-image:;
+    background-color:;
+    text-color: $COLOR_INVERTED_FOREGROUND;
+    font: "Droid Sans" 14;
+    vertical-text-align: vcenter;
+    horizontal-text-align: right;
+
+    margin-left: 0;
+    margin-top: 6;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    text-margin-left: 0;
+    text-margin-right: 3;
+    minimum-size: 8% 30;
+    preferred-size: 8% 30;
+    maximum-size: 8% 30;
+}
+
+
+#NowPlayingButton {
+    background-image:;
+    background-color:;
+    text-color: #d6d6d6;
+    font: "Droid Sans" 14;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+
+    margin-left: 0;
+    margin-top: 6;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    text-margin-top: 0;
+    text-margin-bottom: 0;
+    text-margin-left: 12;
+    text-margin-right: 5;
+    minimum-size: 42% 30;
+    preferred-size: 42% 30;
+    maximum-size: 42% 30;
+}
+
+#NextButton {
+    background-image:;
+    background-color:;
+    text-color: #d6d6d6;
+    font: "Droid Sans" 14;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+    margin-left: 0;
+    margin-top: 6;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-margin-left: 12;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    minimum-size: 20% 30;
+    preferred-size: 20% 30;
+    maximum-size: 20% 30;
+}
+
+#NextPlayingButton {
+    background-image:;
+    background-color:;
+    text-color: #ffffff;
+    font: "Droid Sans" 14;
+    vertical-text-align: top;
+    horizontal-text-align: left;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-margin-left: 12;
+    padding-left: 0;
+    padding-top: -2;
+    padding-right: 0;
+    padding-bottom: 0;
+    minimum-size: 20% 30;
+    preferred-size: 20% 30;
+    maximum-size: 20% 30;
+}
+
+#BottomOverlay {
+        background-color: #303030;
+
+        minimum-size: 100% 60;
+        preferred-size: 100% 60;
+        maximum-size: 100% 60;
+
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+
+        text-margin-left: 0;
+        text-margin-top: 0;
+        text-margin-right: 0;
+        text-margin-bottom: 0;
+
+        vertical-align: bottom;
+        horizontal-align: left;
+}
+
+#BottomToolbarSeekBar {
+    handle-pixmap: meegotouch-slider-handle-background-horizontal 30 30;
+    handle-pressed-pixmap: meegotouch-slider-handle-background-pressed-horizontal 36 36;
+
+    background-base-image: meegotouch-progressindicator-bar-background 3 3 3 3;
+    background-elapsed-image: meegotouch-progressindicator-bar-progress 3 3 3 3;
+
+    groove-thickness: 8;
+    minimum-size: -1 30;
+    preferred-size: 100% 30;
+    maximum-size: 100% 30;
+
+    margin-left: 0;
+    margin-top: -7;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#MSliderMinMaxLabel {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    text-margin-left: 0;
+}
+
+#MSliderHandleLabel {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#MSliderImage {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    border-opacity: 0.0;
+    background-opacity: 0.0;
+}
+

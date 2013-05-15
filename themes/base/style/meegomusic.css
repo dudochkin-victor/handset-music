@@ -1,0 +1,854 @@
+@import "playcontrol.css";
+@import "alphabetbar.css";
+
+@const TOPBAR_HEIGHT: 80px;
+
+MApplicationPageStyle.Landscape {
+    minimum-size: 100% 100%;
+    preferred-size: 100% 100%;
+    maximum-size: 100% 100%;
+
+    margin-left: 0;
+    margin-top: 11mm;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+//    background-image:;
+    background-color: white;
+}
+
+MApplicationPageStyle.Portrait {
+    minimum-size: 100% 100%;
+    preferred-size: 100% 100%;
+    maximum-size: 100% 100%;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    background-color: white;
+}
+
+#SearchTextEdit {
+    font: "Droid Sans" 1.5mm;
+}
+
+#ContentContainer {
+    minimum-size: 100% 100%;
+    preferred-size: 100% 100%;
+    maximum-size: 100% 100%;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#PlaylistItem {
+    background-image: "landscape-listItem-bg";
+    background-color:;
+    text-color: #667786;
+    font: "Droid Sans" 2.5mm;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#ArtistsItem {
+    background-image: "landscape-listItem-bg";
+    background-color:;
+    text-color: #667786;
+    font: "Droid Sans" 2.5mm;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+
+    minimum-size: 100% 5mm;
+    preferred-size: 100% 5mm;
+    maximum-size: 100% 5mm;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 1mm;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#SongsItem0 {
+    background-image: ;
+    background-color: #e9eae8;
+//    background-color: #dadcd9;
+
+    minimum-size: 100% 60px;
+    preferred-size: 100% 60px;
+    maximum-size: 100% 60px;
+
+    title-object-name: "SongsItemTitle";
+}
+
+#SongsItem1 {
+    background-image: ;
+//    background-color: #e9eae8;
+    background-color: #dadcd9;
+
+    minimum-size: 100% 60px;
+    preferred-size: 100% 60px;
+    maximum-size: 100% 60px;
+
+    title-object-name: "SongsItemTitle";
+}
+
+#SongsItemTitle {
+    margin-left: 20px;
+
+    color: #264951;
+    font: "Droid Sans Bold" 16px;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+}
+
+#SongsItemActive {
+    background-image: ;
+    background-color: #80b7c3;
+
+    minimum-size: 100% 60px;
+    preferred-size: 100% 60px;
+    maximum-size: 100% 60px;
+
+    title-object-name: "SongsItemActiveTitle";
+}
+
+#SongsItemActiveTitle {
+    margin-left: 20px;
+
+    color: #ffffff;
+    font: "Droid Sans Bold" 16px;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+
+}
+
+#AllMusicItem {
+    background-image: "landscape-listItem-bg";
+    background-color:;
+    text-color: #667786;
+    font: "Droid Sans" 2.5mm;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#NowplayingItem {
+    background-image: "landscape-listItem-bg";
+    background-color:;
+    text-color: #667786;
+    font: "Droid Sans" 2.5mm;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#SearchResultsItem {
+    background-image: "landscape-listItem-bg";
+    background-color:;
+    text-color: #667786;
+    font: "Droid Sans" 2.5mm;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#AllMusicContainer {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#AllArtistContainer {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#SearchResultsContainer {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#Playlists {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size: 100% 50.3%;
+    preferred-size: 100% 50.3%;
+    maximum-size: 100% 50.3%;
+}
+
+#PlaylistContainer {
+//   background-color: white;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size: 99% -1;
+    preferred-size: 99% -1;
+    maximum-size: 99% -1;
+
+}
+
+#SongItem {
+    background-image:"landscape-listItem-bg";
+    background-color:;
+    text-color: #667786;
+    font: "Droid Sans" 2.5mm;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+}
+
+#SearchItem {
+    background-image:"landscape-listItem-bg";
+}
+
+#SearchLabel {
+    text-color: #667786;
+    font: "Droid Sans" 2.5mm;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+}
+
+MContainerHeader MLabelStyle {
+   color: black;
+}
+
+#AlbumArt {
+    background-image: "album_artwork_shadow";
+    background-color: ;
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    minimum-size: 29% 50%;
+    preferred-size: 29% 50%;
+    maximum-size: 29% 50%;
+
+    image-object-name: "AlbumArtImage";
+}
+
+#AlbumArtImage {
+    margin-left: 2px;
+    margin-right: 0;
+    margin-top: 3px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    minimum-size: 28% 48%;
+    preferred-size: 28% 48%;
+    maximum-size: 28% 48%;
+}
+
+#PlaylistsItem {
+    background-image:;
+    background-color:;
+    text-color: #667786;
+    font: "Droid Sans" 3.5mm;
+    vertical-text-align: left;
+    horizontal-text-align: left;
+}
+
+#AllArtist {
+    minimum-size: 100% 52.3%;
+    preferred-size: 100% 52.3%;
+    maximum-size: 100% 52.3%;
+
+    margin-left: -9;
+    margin-top: -9;
+}
+
+#AllArtistListing {
+    minimum-size: 100% 52.3%;
+    preferred-size: 100% 52.3%;
+    maximum-size: 100% 52.3%;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#AllArtistList {
+    group-header-object-name: "AllArtistListHeader";
+
+    minimum-size: 99% -1;
+    preferred-size: 99% -1;
+    maximum-size: 99% -1;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#AllArtistListHeader {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1mm;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    color: gray;
+    background-color: lightgray;
+}
+
+#SearchResultsListing {
+    minimum-size: 100% 54%;
+    preferred-size: 100% 54%;
+    maximum-size: 100% 54%;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#PlaylistListing {
+    minimum-size: 100% 52.3%;
+    preferred-size: 100% 52.3%;
+    maximum-size: 100% 52.3%;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#ArtistList {
+    background-color: white;
+}
+
+#ArtistListing {
+    minimum-size: 100% 56%;
+    preferred-size: 100% 56%;
+    maximum-size: 100% 56%;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#AllMusicListing {
+    minimum-size: 100% 28mm;
+    preferred-size: 100% 28mm;
+    maximum-size: 100% 28mm;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#AllMusic {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#SearchBar {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+
+    minimum-size: 100% 14%;
+    preferred-size: 100% 14%;
+    maximum-size: 100% 14%;
+}
+
+#SearchBarButton {
+    margin-left: 0;
+    margin-top: -2px;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    minimum-size: -1 14%;
+    preferred-size: -1 14%;
+    maximum-size: -1 14%;
+}
+
+#CrumbBar {
+    background-image: "landscape-crumbbar-bg";
+//    background-image: "crumb_panel2";
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: -4px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+
+    minimum-size: 100% 12%;
+    preferred-size: 100% 12%;
+    maximum-size: 100% 12%;
+
+    background-opacity: 1.0;
+}
+
+#CrumbButton {
+    text-color: #264951;
+//    background-image: "breadcrumb_panel";
+    background-image: "landscape-crumbbar-bg";
+    background-color:;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size: 100% 12%;
+    preferred-size: 100% 12%;
+    maximum-size: 100% 12%;
+    font: "Droid Sans Bold" 16px;
+
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+
+    background-opacity: 1.0;
+}
+
+#CrumbButtonActive {
+    text-color: #ffffff;
+    background-image: "breadcrumb_panel";
+    background-color:;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size: 132px 67px;
+    preferred-size: 132px 67px;
+    maximum-size: 132px 67px;
+
+    font: "Droid Sans Bold" 16px;
+
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+
+    background-opacity: 1.0;
+}
+
+#CrumbPanel {
+    background-image: "crumb_panel2";
+    background-color:;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+
+    minimum-size: 90% 66px;
+    preferred-size: 90% 66px;
+    maximum-size: 90% 66px;
+
+//    icon-size: 100% 67px;
+}
+
+#CrumbSeparator {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size: 30px 53px;
+    preferred-size: 30px 53px;
+    maximum-size: 30px 53px;
+
+
+//    background-opacity: 0.0;
+}
+
+#Album {
+    background-color: white;
+
+    minimum-size: 100% 56%;
+    preferred-size: 100% 56%;
+    maximum-size: 100% 56%;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#ListWithUri {
+    background-color: white;
+
+    minimum-size: 100% 56.2%;
+    preferred-size: 100% 56.2%;
+    maximum-size: 100% 56.2%;
+
+    margin-left: 0;
+    margin-top: -6px;
+//    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+}
+
+#AlbumItem {
+    background-image: "landscape-listItem-bg";
+
+    minimum-size: 100% 15mm;
+    preferred-size: 100% 15mm;
+    maximum-size: 100% 15mm;
+}
+
+#AlbumsItem {
+    background-image: "landscape-listItem-bg";
+
+    padding-top:0;
+    padding-bottom:0;
+    padding-left:0;
+    padding-right:0;
+
+    minimum-size: 41mm 8mm;
+    preferred-size: 41mm 8mm;
+    maximum-size: 41mm 8mm;
+
+    image-object-name: "AlbumsItemImage";
+    title-object-name: "AlbumsItemTitle";
+}
+
+#AlbumsItemImage {
+    minimum-size: 8mm 8mm;
+    preferred-size: 8mm 8mm;
+    maximum-size: 8mm 8mm;
+
+    margin-left:   0;
+    margin-right:  0;
+    margin-top:    0;
+    margin-bottom: 0;
+}
+
+#AlbumsItemTitle {
+    color: #667786;
+    font: "Droid Sans" 2.5mm;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+}
+
+#ContentItemTitle {
+    color: #667786;
+    font: "Droid Sans" 2.5mm;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+}
+
+#ContentItemImage {
+    margin-top:-5;
+    margin-bottom:0;
+    margin-left:-5;
+    margin-right:0;
+    padding-top:0;
+    padding-bottom:0;
+    padding-left:0;
+    padding-right:0;
+    minimum-size: 10mm 8mm;
+    preferred-size: 10mm 9mm;
+    maximum-size: 10mm 10mm;
+}
+
+#AlbumItemImage {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size: 15mm -1;
+    preferred-size: 15mm -1;
+    maximum-size: 15mm -1;
+}
+
+#AlbumItemButton {
+    background-image:;
+    background-color:;
+    text-color: #667786;
+    font: "Droid Sans" 2.5mm;
+    vertical-text-align: vcenter;
+    horizontal-text-align: left;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    minimum-size: -1 15mm;
+    preferred-size: -1 15mm;
+    maximum-size: -1 15mm;
+}
+
+#TopOverlay {
+        background-image: ;
+        background-color: #303030;
+
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-left: $TOPBAR_HEIGHT;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+
+        text-margin-left: 0;
+        text-margin-top: 0;
+        text-margin-right: 0;
+        text-margin-bottom: 0;
+
+        minimum-size: 100% 65;
+        preferred-size: 100% 65;
+        maximum-size: 100% 65;
+}
+
+#TopOverlayHolder {
+        margin-left: 0;
+        margin-top: 40px;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+
+        text-margin-left: 0;
+        text-margin-top: 0;
+        text-margin-right: 0;
+        text-margin-bottom: 0;
+
+        minimum-size: 100% 70px;
+        preferred-size: 100% 70px;
+        maximum-size: 100% 70px;
+}
+
+#NowPlayingTopOverlayHolder {
+        margin-left: 0;
+        margin-top: 44px;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+
+        text-margin-left: 0;
+        text-margin-top: 0;
+        text-margin-right: 0;
+        text-margin-bottom: 0;
+
+        minimum-size: 100% 70px;
+        preferred-size: 100% 70px;
+        maximum-size: 100% 70px;
+}
+
+#Dialog {
+    title-bar-height: 0;
+
+    minimum-size: 100% 320px;
+    preferred-size: 100% 320px;
+    maximum-size: 100% 320px;
+
+    dialog-vertical-alignment: center;
+}
+
+#DialogChoosePlaylist {
+    minimum-size: 100% 400px;
+    preferred-size: 100% 400px;
+    maximum-size: 100% 400px;
+
+    dialog-bottom-margin: 15px;
+
+    dialog-vertical-alignment: center;
+}
+
+#DialogSearch {
+    minimum-size: 100% 350px;
+    preferred-size: 100% 350px;
+    maximum-size: 100% 350px;
+
+    dialog-top-margin: 100px;
+    dialog-bottom-margin: 0;
+
+    dialog-vertical-alignment: center;
+}
+
+#searchEdit {
+    margin-left: 0;
+    margin-top: 2px;
+
+
+    minimum-size: 85% 60px;
+    preferred-size: 85% 60px;
+    maximum-size: 85% 60px;
+}
+
+#searchButton {
+    minimum-size: 13% 63px;
+    preferred-size: 13% 63px;
+    maximum-size: 13% 63px;
+}

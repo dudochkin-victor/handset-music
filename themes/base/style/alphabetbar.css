@@ -1,0 +1,47 @@
+#AlphabetBar {
+    minimum-size: 100% 12%;
+    preferred-size: 100% 12%;
+    maximum-size: 100% 12%;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    background-image: "landscape-crumbbar-bg";
+}
+
+#AlphabetItem {
+    minimum-size: 3.8% 12%;
+    preferred-size: 3.8% 12%;
+    maximum-size: 3.8% 12%;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    text-margin-left: 0;
+    text-margin-top: 0;
+    text-margin-right: 0;
+    text-margin-bottom: 0;
+
+    background-image: meegotouch-button-navigationbar-media-tab-background;
+    text-color: $COLOR_INVERTED_FOREGROUND;
+    font: "Nokia Sans" 2.2mm;
+    vertical-text-align: vcenter;
+    horizontal-text-align: center;
+}
+
+#AlphabetItem:pressed {
+    text-color: yellow;
+}
+

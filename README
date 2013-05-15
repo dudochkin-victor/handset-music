@@ -1,0 +1,28 @@
+MeeGo-Handset-Music
+Copyright (c) 2010, Intel Corporation, 2010
+
+MeeGo-Handset-Music is an audio player based on Qt and MTF
+It depends on:
+ - bognor-regis, for play-queue service
+ - libqttracker to access meta data of media files
+
+----------------------------
+Build
+----------------------------
+$ qmake
+$ make
+
+----------------------------
+Install
+----------------------------
+$ sudo make install
+
+----------------------------
+Running
+----------------------------
+$ meegomusic
+
+----------------------------
+Note
+----------------------------
+Please copy audio files under /home/meego/Music

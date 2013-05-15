@@ -1,0 +1,28 @@
+* Handle unsupported media file format. In UI when unsupported media file format is played, a dialog with  error is shown; In PlayAll when unsupported media file format is played, it's skipped.
+
+* If the application is unable to find any content for a given view, then we need to provide text
+  in the appropriate content area explaining this.  For example... if you start the app with no music
+  on the device (or at least tracker isn't able to find/index the content), then the AllArtist widget
+  should not render an empty list, but instead insert a DuiLabel with appropriate error message centered
+  in the view.
+
+* Implement a proper AlphabetBar that can deal with multiple languages:
+ - The implementation should observe the system locale (available via QLocale)
+   to show an alphabet view that makes sense.  For latin based languages this is
+   pretty obvious, but we also need to handle other language families.
+ - this implementation will also be closely related to the associated content that
+   sits below the widget so that when a user interacts with the AlphabetBar then
+   the associated list widget will scroll to the correct location.  Just making
+   the AlphabetBar emit a percentage will not work since we can not assume that the
+   content of the associated list has an equal distribution (i.e. perhaps your music library
+   has large percentage of content that falls into the beginning of the alphabet.)
+
+* Implement playlist.  I started off with a simple QSettings based implementation 
+  (since i know how to do that), but it might make sense to convert this to Tracker using 
+  the nfo:MediaList ontology.
+
+Potential Items / Stuff to think about:
+
+* It would make more sense for bognor-regis to know how to load a playlist into the queue.  This
+  would simplify the application code to be a simple dbus call to load a playlist name.  Perhaps
+  a playlist could just be an implementation of a queue?  Need to touch base with Iain on this.
